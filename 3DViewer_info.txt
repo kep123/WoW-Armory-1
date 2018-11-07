@@ -22,4 +22,9 @@ If you find a bug, please report them here:
 https://github.com/Takenbacon/wowarmory/issues?state=open
 
 Download link for 3D Viewer Models:
-http://uploading.com/files/8acm6582/models.rar/
+Wow-icons: 
+https://github.s3.amazonaws.com/downloads/Seejayz/WorldofwarcraftArmory/_images.rar?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20181107%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181107T124917Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=805d0de93a9c729b5f60180458750234f2a8034c095b59fc1a5852b880460f54
+
+models:
+https://github.s3.amazonaws.com/downloads/Seejayz/WorldofwarcraftArmory/models.rar?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20181107%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181107T124942Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f8d0d3eb18602b868d2ed4e7ce2677d0a83d1f36d1b9dc858a12e639d82e8d0a
+
