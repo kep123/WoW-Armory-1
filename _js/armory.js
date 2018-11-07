@@ -667,7 +667,7 @@ function getItemHtml(itemUrl)
 function getTipHTML(itemID, itemWithTip, mouseEvent)
 {
 	//load XSL stylesheet if we haven't yet	
-	if(!($.browser.safari) && !($.browser.safari)){
+	/*if(!($.browser.safari) && !($.browser.safari)){
 		if(itemToolTipXSLLoaded == false)
 		{
 			//get the stylesheet			
@@ -680,7 +680,7 @@ function getTipHTML(itemID, itemWithTip, mouseEvent)
 			
 			itemToolTipXSLLoaded = true;
 		}
-	}
+	}*/
 	
 	//get the "pretty-html" for the tooltip
 	if(toolVault[itemID] == null)
@@ -689,14 +689,15 @@ function getTipHTML(itemID, itemWithTip, mouseEvent)
 		setTipText(tLoading+"...");
 		setToolTipPosition(itemWithTip,mouseEvent);
 		
-		var urlstr = "item-tooltip.xml?i="+itemID;
+		//var urlstr = "item-tooltip.xml?i="+itemID;
+		var urlstr = "api/item_tooltip.php?item_id="+itemID;
 		
 		$.ajax({
 			type: "GET",
 			url: urlstr,
 			success: function(msg){				
 				//cache the tooltip text based on browser
-				if(($.browser.safari) || ($.browser.safari)){
+				/*if(($.browser.safari) || ($.browser.safari)){
 					toolVault[itemID] = msg;
 					
 					if(toolVault[itemID].length <= 4)
@@ -710,7 +711,10 @@ function getTipHTML(itemID, itemWithTip, mouseEvent)
 					//set error message
 					if(toolVault[itemID].length <= 4)
 						toolVault[itemID] = errorLoadingToolTip;					
-				}
+				}*/
+				toolVault[itemID] = msg;
+				if(toolVault[itemID].length <= 4)
+				toolVault[itemID] = errorLoadingToolTip;
 				
 				//prevent showing the wrong item or an empty tooltip
 				if(currItemID == itemID){					
